@@ -17,7 +17,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$version = '1.2.0'
+$version = '1.2.0_1'
 $name    = 'pfSense-pkg-AmneziaWG'
 
 $root  = Split-Path $PSScriptRoot -Parent
@@ -388,3 +388,4 @@ Write-Host ''
 Write-Host 'Install on pfSense:'
 Write-Host "    scp $out root@FIREWALL:/root/"
 Write-Host "    ssh root@FIREWALL pkg add /root/$(Split-Path $out -Leaf)"
+
